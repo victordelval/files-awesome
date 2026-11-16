@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-doc-new"
+description = "Enables the doc_new command without any pre-configured scope."
+commands.allow = ["doc_new"]
+
+[[permission]]
+identifier = "deny-doc-new"
+description = "Denies the doc_new command without any pre-configured scope."
+commands.deny = ["doc_new"]

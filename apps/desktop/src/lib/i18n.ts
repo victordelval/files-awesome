@@ -1,0 +1,86 @@
+/** UI strings. Spanish first; other locales can be added as sibling objects. */
+export const t = {
+  app: 'Files Awesome',
+  untitled: 'Sin título',
+  placeholder: 'Empieza a escribir…',
+
+  welcome: {
+    tagline: 'Un lugar tranquilo para escribir.',
+    new: 'Nuevo documento',
+    open: 'Abrir…',
+    recent: 'Recientes',
+    noRecent: 'Aún no hay documentos recientes.',
+    drop: 'También puedes arrastrar un fichero .md a la ventana.',
+  },
+
+  outline: 'Índice',
+  outlineEmpty: 'Sin encabezados',
+
+  status: {
+    file: 'Archivo',
+    words: 'Palabras',
+    reading: 'Lectura',
+    format: 'Formato',
+    state: 'Estado',
+    mode: 'Modo',
+    commands: 'Comandos',
+    saved: 'Guardado',
+    unsaved: 'Sin guardar',
+    neverSaved: 'Nuevo',
+    preview: 'Vista',
+    source: 'Fuente',
+    min: 'min',
+    mixed: 'mixto → ',
+  },
+
+  notice: {
+    modified: 'Este documento ha cambiado en disco mientras lo editabas.',
+    conflict: 'No se ha guardado: otro programa modificó el fichero desde que lo abriste.',
+    missing: 'El fichero ya no existe en disco. Guarda para volver a crearlo.',
+    reload: 'Cargar versión del disco',
+    keepMine: 'Conservar la mía',
+    overwrite: 'Sobrescribir con la mía',
+    save: 'Guardar',
+    dismiss: 'Cerrar',
+  },
+
+  confirm: {
+    unsavedTitle: (name: string) => `¿Guardar los cambios de «${name}»?`,
+    unsavedBody: 'Si no los guardas, se perderán.',
+    save: 'Guardar',
+    discard: 'No guardar',
+    cancel: 'Cancelar',
+    linkTitle: '¿Abrir enlace externo?',
+    linkBody: (url: string) => `Se abrirá en tu navegador:\n${url}`,
+    open: 'Abrir',
+  },
+
+  toast: {
+    saved: 'Guardado',
+    reloaded: 'Actualizado desde el disco',
+    historyWarning: 'Guardado, pero no se pudo copiar la versión anterior al historial.',
+    localLinks: 'Los enlaces a otros ficheros llegarán pronto.',
+    blockedLink: 'Este tipo de enlace está bloqueado por seguridad.',
+  },
+
+  cmd: {
+    new: 'Nuevo documento',
+    open: 'Abrir…',
+    save: 'Guardar',
+    saveAs: 'Guardar como…',
+    close: 'Cerrar documento',
+    reload: 'Recargar desde disco',
+    toggleSource: 'Alternar vista / fuente',
+    toggleOutline: 'Mostrar u ocultar índice',
+    focus: 'Modo foco',
+    theme: 'Tema: claro / oscuro / sistema',
+    font: 'Tipografía del texto: sans / serif',
+    zoomIn: 'Aumentar tamaño de texto',
+    zoomOut: 'Reducir tamaño de texto',
+    zoomReset: 'Restablecer tamaño de texto',
+    find: 'Buscar y reemplazar',
+    palette: 'Paleta de comandos',
+    placeholder: 'Escribe un comando…',
+    empty: 'Ningún comando coincide',
+  },
+} as const;

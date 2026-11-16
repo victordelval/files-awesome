@@ -1,0 +1,11 @@
+{
+  "name": "files-awesome",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @files-awesome/desktop tauri dev",
+    "dev:web": "pnpm --filter @files-awesome/desktop dev",
+    "build": "pnpm --filter @files-awesome/desktop tauri build",
+    "check": "pnpm --filter @files-awesome/desktop check && cargo clippy --workspace --all-targets && cargo test --workspace"
+  },
+  "packageManager": "pnpm@12.11.2"
+}

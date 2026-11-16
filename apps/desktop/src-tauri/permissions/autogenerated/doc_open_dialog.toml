@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-doc-open-dialog"
+description = "Enables the doc_open_dialog command without any pre-configured scope."
+commands.allow = ["doc_open_dialog"]
+
+[[permission]]
+identifier = "deny-doc-open-dialog"
+description = "Denies the doc_open_dialog command without any pre-configured scope."
+commands.deny = ["doc_open_dialog"]

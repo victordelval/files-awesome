@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-app-take-startup-paths"
+description = "Enables the app_take_startup_paths command without any pre-configured scope."
+commands.allow = ["app_take_startup_paths"]
+
+[[permission]]
+identifier = "deny-app-take-startup-paths"
+description = "Denies the app_take_startup_paths command without any pre-configured scope."
+commands.deny = ["app_take_startup_paths"]

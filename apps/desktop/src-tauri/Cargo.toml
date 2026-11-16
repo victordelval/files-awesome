@@ -1,0 +1,27 @@
+[package]
+name = "files-awesome"
+description = "A calm, safe editor for Markdown and other plain-text formats"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+[lib]
+name = "files_awesome_lib"
+
+[build-dependencies]
+tauri-build = { version = "2.7", features = [] }
+
+[dependencies]
+fa-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2.12", features = [] }
+tauri-plugin-dialog = "2.8"
+tauri-plugin-opener = "2.7"
+tauri-plugin-single-instance = "2.5"
+notify-debouncer-full = "0.7"
+
+[lints]
+workspace = true

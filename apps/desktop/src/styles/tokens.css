@@ -1,0 +1,76 @@
+/*
+ * Design tokens — "architecture studio".
+ * Paper and graphite, hairlines instead of boxes, one signal colour used
+ * sparingly (caret, unsaved mark, focus). Type does the work.
+ */
+:root {
+  /* Type */
+  --font-ui: 'Geist Variable', 'Geist', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-ui);
+  --font-serif: 'Newsreader Variable', 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --font-mono: 'Geist Mono Variable', 'Geist Mono', ui-monospace, 'JetBrains Mono', Menlo, monospace;
+  --font-text: var(--font-sans);
+  --text-size: 17px;
+  --measure: 68ch;
+
+  /* Grid: 4px base */
+  --u: 4px;
+  --rail: 240px;
+  --page-top: 14vh;
+  --titleblock-h: 40px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --t-fast: 120ms;
+  --t-med: 180ms;
+
+  /* Light palette */
+  --paper: #f6f5f1;
+  --paper-raised: #fbfaf8;
+  --paper-sunk: #efede7;
+  --ink: #1b1b19;
+  --ink-2: #4f4d48;
+  --ink-3: #8a877f;
+  --ink-4: #b7b3aa;
+  --rule: #dedad1;
+  --rule-strong: #c6c1b6;
+  --accent: #d9481c;
+  --accent-ink: #b43a14;
+  --selection: rgba(217, 72, 28, 0.14);
+  --match: rgba(27, 27, 25, 0.1);
+  --match-strong: rgba(217, 72, 28, 0.28);
+  --scrim: rgba(27, 27, 25, 0.12);
+  --shadow: 0 1px 0 rgba(27, 27, 25, 0.04), 0 12px 32px -12px rgba(27, 27, 25, 0.18);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #141413;
+  --paper-raised: #1b1b1a;
+  --paper-sunk: #101010;
+  --ink: #e8e6e0;
+  --ink-2: #b0ada5;
+  --ink-3: #7a776f;
+  --ink-4: #4d4b46;
+  --rule: #2a2927;
+  --rule-strong: #3b3936;
+  --accent: #f0683a;
+  --accent-ink: #f58a62;
+  --selection: rgba(240, 104, 58, 0.22);
+  --match: rgba(232, 230, 224, 0.12);
+  --match-strong: rgba(240, 104, 58, 0.35);
+  --scrim: rgba(0, 0, 0, 0.45);
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 16px 40px -12px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+:root[data-text-font='serif'] {
+  --font-text: var(--font-serif);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-med: 0ms;
+  }
+}

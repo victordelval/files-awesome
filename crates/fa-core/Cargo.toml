@@ -1,0 +1,18 @@
+[package]
+name = "fa-core"
+description = "UI-independent, data-safe document I/O for Files Awesome"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tempfile.workspace = true
+blake3.workspace = true
+
+[lints]
+workspace = true

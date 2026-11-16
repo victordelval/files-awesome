@@ -1,0 +1,24 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Main editor window. No filesystem, shell or dialog plugin access from JavaScript: every file operation goes through the validated Rust commands below.",
+  "windows": ["main"],
+  "permissions": [
+    "core:event:default",
+    "core:window:default",
+    "core:window:allow-set-title",
+    "core:window:allow-show",
+    "core:window:allow-destroy",
+    "allow-app-take-startup-paths",
+    "allow-doc-new",
+    "allow-doc-open-dialog",
+    "allow-doc-open-path",
+    "allow-doc-save",
+    "allow-doc-save-as",
+    "allow-doc-reload",
+    "allow-doc-close",
+    "allow-doc-disk-state",
+    "allow-recent-list",
+    "allow-open-external"
+  ]
+}

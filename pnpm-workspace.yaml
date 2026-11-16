@@ -1,0 +1,6 @@
+packages:
+  - apps/*
+
+# Supply-chain hygiene: do not install package versions published less than
+# 3 days ago (gives the ecosystem time to catch compromised releases).
+minimumReleaseAge: 4320
